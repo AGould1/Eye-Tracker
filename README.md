@@ -2,7 +2,7 @@
  
 A real-time face-tracking pan-tilt camera mount built with Python, OpenCV, and Arduino. The system detects a face via webcam, computes its offset from the frame's center, and smooths that signal before converting it into servo commands, driving a two-axis (pan/tilt) hardware rig that physically follows the detected face.
  
-This is an active hobby/learning project. The core software → hardware pipeline is fully working; physical mounting and additional features are in progress.
+This is an active hobby/learning project. The core software to hardware pipeline is fully working; physical mounting and additional features are in progress.
  
 ## How it works
  
