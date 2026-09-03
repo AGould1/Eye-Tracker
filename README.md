@@ -1,6 +1,6 @@
 # Eye-Tracker
  
-A real-time face-tracking pan-tilt camera mount built with Python, OpenCV, and Arduino. The system detects a face via webcam, computes its offset from the frame's center, and smooths that signal before converting it into servo commands — driving a two-axis (pan/tilt) hardware rig that physically follows the detected face.
+A real-time face-tracking pan-tilt camera mount built with Python, OpenCV, and Arduino. The system detects a face via webcam, computes its offset from the frame's center, and smooths that signal before converting it into servo commands, driving a two-axis (pan/tilt) hardware rig that physically follows the detected face.
  
 This is an active hobby/learning project. The core software → hardware pipeline is fully working; physical mounting and additional features are in progress.
  
@@ -30,7 +30,7 @@ This is an active hobby/learning project. The core software → hardware pipelin
  
 - Detection is based on Haar cascades, which are sensitive to lighting and generally only detect frontal (non-rotated) faces. A more robust detector (e.g. MediaPipe) is being explored as a future upgrade.
 - Under sustained rapid movement, serial communication can occasionally lag due to buffer backlog; a more robust buffering/throttling strategy is still being refined.
-- Physical camera/phone mounting is still in progress — current hardware proves out the tracking pipeline on bare servos.
+- Physical camera/phone mounting is still in progress, current hardware proves out the tracking pipeline on bare servos.
 ## Planned features
  
 - More robust, lighting/angle-resilient face detection
